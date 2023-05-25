@@ -6,6 +6,19 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url("assets/bg.jpg") ;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 10%;
+  
 }
 
 
+@media screen and (max-width: 800px) {
+  body {
+    background-image:url("assets/bg.jpg") ;
+    background-repeat: no-repeat;
+    background-position: 12%;
+    background-size: 300%;
+  }
+}
