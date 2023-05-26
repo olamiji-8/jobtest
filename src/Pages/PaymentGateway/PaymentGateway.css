@@ -8,7 +8,7 @@
 @media screen and (max-width: 900px) {
 .whitebg{
         background-color: white;
-        height: 80vh;
+        height: 92vh;
         width: 40rem;
         margin: 60% 60% 30% 80%;
     }
@@ -46,7 +46,7 @@
     margin-top: 23%;
   }
   .Click_btn{
-    width: 60%;
+    width: 90%;
     height: 10vh;
     color: white;
     font-size: 20px;
@@ -55,7 +55,9 @@
     outline: none;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 7px;
+    margin-top: 4%;
+    margin-left: 8%;
   }
   .Cvv_no{
     font-size: 20px;
@@ -66,7 +68,9 @@
   .Cvv_text{
     font-size: 14px;
     font-weight: 200;
-    margin-top: 4%;
+    margin-top: -6%;
+    margin-left: 8%;
+  
   }
   .Pswd{
     font-size: 20px;
@@ -77,8 +81,25 @@
   .Pswd_input{
     font-size: 14px;
     font-weight: 200;
-    margin-top: 4%; 
+    margin-top: 1%; 
+    margin-left: 8%;
+    width: 16rem;
   }
+  .Pswd_box{
+    height: 7vh;
+    border-radius: 8px;
+    margin-left: 1%;
+    width: 20rem;
+    margin-top: 2%;
+  }
+  .Pswd_grid{
+    display: grid;
+  }
+  .Pswd_flex{
+    display: flex;
+    margin-top: 4%;
+  }
+
   .nav_flex{
     display: flex;
     
@@ -100,8 +121,43 @@
   }
   .Cvv_grid{
     display: grid;
+    margin-top: 0%;
+  }
+  .Card_box{
+    width: 70%;
+    height: 7vh;
+    margin-left: 9%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+    
   }
   .Cvv_box{
-    width: 70%;
-    height: 8vh;
+    width: 20rem;
+    height: 7vh;
+    margin-left: 9%;
+    margin-top: 8%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+  }
+  .Expire_text{
+    font-size: 20px;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-weight: 600;
+  }
+  .Expire_card{
+
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 8%;
+  }
+  .Expire_box{
+    height: 7vh;
+    border-radius: 8px;
+    margin-left: 4%;
+
   }

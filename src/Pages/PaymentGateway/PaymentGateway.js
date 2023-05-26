@@ -23,7 +23,7 @@ const PaymentGateway = () => {
         <h2 className='Card_num'>Enter the 16 -digit card number on the card</h2>
       </div>
       <div>
-        <input type='text' placeholder=''/>
+        <input type='text' placeholder=''className='Card_box'/>
       </div>
       <div className='Cvv'>
         <span className='Cvv_grid'>
@@ -37,15 +37,20 @@ const PaymentGateway = () => {
         
 
       </div>
-      <div>
-        <h2>Expiry Date</h2>
-        <h2>Enter the expiration date of the card</h2>
-        <input type='text' placeholder='' />
+      <div className='Expire_date'>
+        <h2 className='Expire_text'>Expiry Date</h2>
+        <h2 className='Expire_card'>Enter the expiration date of the card</h2>
+        <input type='text' placeholder=''className='Expire_box' />
+        <input type='text' placeholder=''className='Expire_box' />
       </div>
-      <div>
+      <div className='Pswd_flex'>
+        <span className='Pswd_grid'>
         <h2 className='Pswd'>Password</h2>
         <h2 className='Pswd_input'>Enter your Dynamic Password</h2>
-        <input type='password' placeholder=''/>
+        </span>
+        <span className=''>
+        <input type='password' placeholder='' className='Pswd_box'/>
+        </span>
       </div>
       <div>
         <button className='Click_btn'>Pay Now</button>
