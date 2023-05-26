@@ -31,6 +31,7 @@
   }
   .date{
     display: flex;
+    margin-left: 30%;
   }
   .date_border{
    background-color:black ;
@@ -80,4 +81,27 @@
   }
   .nav_flex{
     display: flex;
+    
+  }
+  .Card_no{
+    font-size: 20px;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-weight: 600;
+  }
+  .Card_num{
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 8%;
+    
+  }
+  .Cvv{
+    display: flex;
+  }
+  .Cvv_grid{
+    display: grid;
+  }
+  .Cvv_box{
+    width: 70%;
+    height: 8vh;
   }

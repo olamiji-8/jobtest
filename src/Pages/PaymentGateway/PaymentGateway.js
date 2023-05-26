@@ -18,19 +18,29 @@ const PaymentGateway = () => {
         <span className='date_border'>9</span>
       </div>
       </div>
-      <div>
-        <h2>Card Number</h2>
-        <h2>Enter the 16 -digit card number on the card</h2>
+      <div >
+        <h2 className='Card_no'>Card Number</h2>
+        <h2 className='Card_num'>Enter the 16 -digit card number on the card</h2>
       </div>
       <div>
         <input type='text' placeholder=''/>
       </div>
-      <div>
+      <div className='Cvv'>
+        <span className='Cvv_grid'>
         <h2 className='Cvv_no'>CVV Number</h2>
-        <h2 className='Cvv_text'>Enter the expiration date of the card  </h2>
-        <input type='text' placeholder=''/>
-        <input type='text' placeholder='' />
+        <h2 className='Cvv_text'>Enter the 3 or 4 digit number on the card  </h2>
+        </span>
+        <span>
+        <input type='text' placeholder='' className='Cvv_box'/>
+        </span>
 
+        
+
+      </div>
+      <div>
+        <h2>Expiry Date</h2>
+        <h2>Enter the expiration date of the card</h2>
+        <input type='text' placeholder='' />
       </div>
       <div>
         <h2 className='Pswd'>Password</h2>
