@@ -15,6 +15,8 @@
   }
   .logo{
     display: flex;
+    margin-top: 4%;
+    margin-left: 4%;
   }
   .logo_ist{
     font-size: 20px;
@@ -33,12 +35,14 @@
   .date_border{
    background-color:black ;
    color: aliceblue;
-   padding: 3px 7px 4px 7px;
+   padding: 9px 7px 3px 7px;
    border-radius: 4px;
-   margin-left: 2px;
+   margin-left: 10px;
+  margin-top: 19%;
   }
   .date_dot{
-    margin-left: 2px;
+    margin-left: 9px;
+    margin-top: 23%;
   }
   .Click_btn{
     width: 60%;
@@ -73,4 +77,7 @@
     font-size: 14px;
     font-weight: 200;
     margin-top: 4%; 
+  }
+  .nav_flex{
+    display: flex;
   }

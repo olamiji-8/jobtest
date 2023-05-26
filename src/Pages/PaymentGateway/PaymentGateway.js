@@ -5,6 +5,7 @@ import './PaymentGateway.css';
 const PaymentGateway = () => {
   return (
     <div className='whitebg'>
+      <div className='nav_flex'>
       <div className='logo'>
     <h2 className='logo_ist'>AceCoin</h2>
     <h2 className='logo_2nd'> pay</h2>
@@ -15,6 +16,7 @@ const PaymentGateway = () => {
         <span className='date_dot'>:</span>
         <span className='date_border'>1</span>
         <span className='date_border'>9</span>
+      </div>
       </div>
       <div>
         <h2>Card Number</h2>
