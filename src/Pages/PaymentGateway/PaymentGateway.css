@@ -35,11 +35,13 @@
   }
   .date_border{
    background-color:black ;
+   font-size: 14px;
    color: aliceblue;
-   padding: 9px 7px 3px 7px;
+   padding: 4px 7px 2px 7px;
    border-radius: 4px;
-   margin-left: 10px;
+   margin-left: 8px;
   margin-top: 19%;
+  height: 30%;
   }
   .date_dot{
     margin-left: 9px;

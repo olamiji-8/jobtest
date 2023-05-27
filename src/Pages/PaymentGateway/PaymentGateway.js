@@ -5,6 +5,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import Wifi from "../../assets/mc_symbol.svg"
 import Card from "../../assets/credit-card.png"
 import Payment from "../../assets/payment_card.jpg"
+import CloseIcon from '@mui/icons-material/Close';
 import './PaymentGateway.css';
 
 
@@ -25,14 +26,15 @@ const PaymentGateway = () => {
         <span className='date_border'>1</span>
         <span className='date_border'>9</span>
       </div>
+          <CloseIcon fontSize ="small" style={{display:"flex", marginLeft:"25%", marginTop:"1%", cursor:"pointer"}} />
       </div>
       <div className='Card_flex'>
         <span>
         <h2 className='Card_no'>Card Number</h2>
         <h2 className='Card_num'>Enter the 16 -digit card number on the card</h2>
         </span>
-        <span style={{color:"blue", fontSize:"10px", cursor:"pointer",marginTop:"48px" }}>
-          <EditIcon fontSize ="small"/>
+        <span style={{color:"blue", fontSize:"10px", cursor:"pointer",marginTop:"48px"}}>
+          <EditIcon fontSize ="small" style={{marginLeft:"-80%"}}/>
           <span>Edit</span>
         </span>
       </div>
@@ -75,7 +77,7 @@ const PaymentGateway = () => {
         </span>
       </div>
       <div>
-        <img src={Payment} alt='' width="20%" height="70%" style={{position:"absolute", display:"flex", marginLeft:"74%",marginTop:"-45%"}}/>
+        <img src={Payment} alt='' width="20%" height="70%" style={{position:"absolute", display:"flex", marginLeft:"72%",marginTop:"-45%"}}/>
       </div>
       <div>
         <button className='Click_btn'>Pay Now</button>
