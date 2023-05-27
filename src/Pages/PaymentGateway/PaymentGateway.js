@@ -2,14 +2,18 @@ import React from 'react'
 import EditIcon from '@mui/icons-material/Edit';
 import AppsIcon from '@mui/icons-material/Apps';
 import VerifiedIcon from '@mui/icons-material/Verified';
+import Wifi from "../../assets/mc_symbol.svg"
+import Card from "../../assets/credit-card.png"
 import './PaymentGateway.css';
 
 
 const PaymentGateway = () => {
   return (
     <div className='whitebg'>
+      
       <div className='nav_flex'>
       <div className='logo'>
+        <img src={Card} alt='' width="40px" style={{backgroundColor:"blue", borderRadius:"50%"}}/>
     <h2 className='logo_ist'>AceCoin</h2>
     <h2 className='logo_2nd'> pay</h2>
       </div>
@@ -32,7 +36,8 @@ const PaymentGateway = () => {
         </span>
       </div>
       <div>
-        <input type='text' placeholder=''className='Card_box'/>
+      <img src={Wifi} alt='' width="28px" style={{display:"flex", marginLeft:"8%", position:"absolute", marginTop:"4.8%"}}/>
+        <input type='text' placeholder='2412     - 7512     - 3412     - 3456'className='Card_box'/>
         <VerifiedIcon fontSize ="small" style={{color:"blue",opacity:"0.4",marginLeft:"-5%",marginTop:"4%"}} />
       </div>
       <div className='Cvv'>
