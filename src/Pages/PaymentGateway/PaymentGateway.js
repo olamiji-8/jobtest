@@ -4,6 +4,7 @@ import AppsIcon from '@mui/icons-material/Apps';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import Wifi from "../../assets/mc_symbol.svg"
 import Card from "../../assets/credit-card.png"
+import Payment from "../../assets/payment_card.jpg"
 import './PaymentGateway.css';
 
 
@@ -72,6 +73,9 @@ const PaymentGateway = () => {
         <input type='password' placeholder='' className='Pswd_box'/>
         <AppsIcon fontSize ="small" style={{marginTop:"7%", marginLeft:"-12%"}}/>
         </span>
+      </div>
+      <div>
+        <img src={Payment} alt='' width="20%" height="70%" style={{position:"absolute", display:"flex", marginLeft:"74%",marginTop:"-45%"}}/>
       </div>
       <div>
         <button className='Click_btn'>Pay Now</button>
