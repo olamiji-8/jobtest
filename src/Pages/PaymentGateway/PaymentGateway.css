@@ -1,9 +1,224 @@
 .whitebg{
     background-color: white;
-    height: 80vh;
-    width: 70rem;
-    margin: 40% 60% 30% 80%;
+    height: 94vh;
+    width: 58rem;
+    margin: 24% 0% 30% 10rem;
 }
+.logo{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+  .logo_ist{
+    font-size: 17px;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-weight: 600;
+  }
+  .logo_2nd{
+    font-size: 17px;
+    font-weight: 200;
+    margin-top: 4%;
+  }
+  .date{
+    display: flex;
+    margin-left: 24%;
+  }
+  .date_border{
+   background-color:black ;
+   font-size: 14px;
+   color: aliceblue;
+   padding: 4px 7px 2px 7px;
+   border-radius: 4px;
+   margin-left: 8px;
+  margin-top: 19%;
+  height: 30%;
+  }
+  .date_dot{
+    margin-left: 9px;
+    margin-top: 23%;
+  }
+  .Click_btn{
+    width: 53.2%;
+    height: 8vh;
+    color: white;
+    font-size: 14px;
+    background-color:blue;
+    opacity: 0.7;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 3%;
+    margin-left: 6%;
+  }
+  .Cvv_no{
+    font-size: 13px;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-weight: 700;
+  }
+  .Cvv_text{
+    color:black;
+    opacity: 0.4;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: -8%;
+    margin-left: 8%;
+    width: 100%;
+  
+  }
+  .Pswd{
+    font-size: 13px;
+    margin-left: 22%;
+    margin-top: 4%;
+    font-weight: 700;
+  }
+  .Pswd_input{
+    color:black;
+    opacity: 0.4;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 1%; 
+    margin-left: 22%;
+    width: 16rem;
+  }
+  .Pswd_box{
+    height: 7vh;
+    border-radius: 8px;
+    margin-left: 1%;
+    width: 16.7rem;
+    margin-top: 2%;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+  }
+  .Pswd_grid{
+    display: grid;
+  }
+  .Pswd_flex{
+    display: flex;
+    margin-top: 4%;
+  }
+
+  .nav_flex{
+    display: flex;
+    
+  }
+  .Card_no{
+    font-size: 13px;
+    margin-left: 24%;
+    margin-top: 18%;
+    font-weight: 700;
+  }
+  .Card_num{
+    color:black;
+    opacity: 0.4;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 24%;
+    margin-top: 1%;
+    width: 100%;
+    
+  }
+  .Cvv{
+    display: flex;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+  .Cvv_grid{
+    display: grid;
+    margin-top: 0%;
+  }
+  .Card_box{
+    width: 44%;
+    height: 7vh;
+    margin-left: 6%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+    padding-left: 8%;
+    margin-top: 3%;
+    
+  }
+  .Card_flex{
+    display: flex;
+    width: 77.2%;
+    justify-content: space-between;
+  }
+  .Cvv_box{
+    width: 16rem;
+    height: 7vh;
+    margin-left: 9%;
+    margin-top: 8%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+  }
+  .Expire_text{
+    font-size: 13px;
+    margin-left: 6%;
+    margin-top: 4%;
+    width: 30%;
+    font-weight: 700;
+  }
+  .Expire_card{
+    color:black;
+    opacity: 0.4;
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 6%;
+    margin-top: 1%;
+  }
+  .Expire_box{
+    height: 7vh;
+    border-radius: 8px;
+    margin-left: 3%;
+    border: 2px solid lightblue;
+    opacity: 0.3;
+    width: 11%;
+
+  }
+.Expire_slash{
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: 600;
+}
+
+.Expire_grid{
+    display: flex;
+    
+}
+.Expire_date{
+    margin-top: 2%;
+   
+    
+}
+.Wifi{
+    width: 28px;
+    display:flex;
+     margin-left:5%;
+      position:absolute;
+       margin-top:3%;
+  }
+  .Payment{
+    width: 17%;
+    position:absolute;
+     display:flex;
+      margin-left:49%;
+      margin-top:-28%;
+      height: 70%;
+}
+.EditIcon{
+    color:blue;
+     font-size:10px;
+      cursor:pointer;
+      margin-top:48px;
+      
+}
+
+
 
 @media screen and (max-width: 900px) {
 .whitebg{
@@ -11,8 +226,9 @@
         height: 92vh;
         width: 47rem;
         margin: 60% 60% 30% 38%;
+      
     }
-  }
+  
   .logo{
     display: flex;
     margin-top: 4%;
@@ -203,4 +419,28 @@
     margin-top: 2%;
    
     
+}
+.Wifi{
+    width: 28px;
+    display:flex;
+     margin-left:8%;
+      position:absolute;
+       margin-top:4.8%;
+  }
+  .Payment{
+    width: 20%;
+    position:absolute;
+     display:flex;
+      margin-left:72%;
+      margin-top:-45%;
+      height: 70%;
+}
+.EditIcon{
+    color:blue;
+     font-size:10px;
+      cursor:pointer;
+      margin-top:48px;
+      
+}
+
 }

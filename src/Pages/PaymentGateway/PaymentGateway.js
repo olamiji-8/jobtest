@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import EditIcon from '@mui/icons-material/Edit';
 import AppsIcon from '@mui/icons-material/Apps';
 import VerifiedIcon from '@mui/icons-material/Verified';
@@ -10,6 +10,25 @@ import './PaymentGateway.css';
 
 
 const PaymentGateway = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const shouldShowEdit = windowWidth < 901;
+  const hideShowEdit = windowWidth > 901;
+  const shouldShowIcon = windowWidth < 901;
+  const hideShowIcon = windowWidth > 901;
   return (
     <div className='whitebg'>
       
@@ -26,20 +45,34 @@ const PaymentGateway = () => {
         <span className='date_border'>1</span>
         <span className='date_border'>9</span>
       </div>
-          <CloseIcon fontSize ="small" style={{display:"flex", marginLeft:"25%", marginTop:"1%", cursor:"pointer"}} />
+      {shouldShowIcon && (
+        <CloseIcon fontSize ="small" style={{display:"flex", marginLeft:"25%", marginTop:"1%", cursor:"pointer"}} />
+      )}
+     {hideShowIcon && (
+        <CloseIcon fontSize ="small" style={{display:"flex", marginLeft:"32%", marginTop:"2%", cursor:"pointer"}} />
+      )}
       </div>
       <div className='Card_flex'>
         <span>
         <h2 className='Card_no'>Card Number</h2>
         <h2 className='Card_num'>Enter the 16 -digit card number on the card</h2>
         </span>
-        <span style={{color:"blue", fontSize:"10px", cursor:"pointer",marginTop:"48px"}}>
-          <EditIcon fontSize ="small" style={{marginLeft:"-80%"}}/>
+        {shouldShowEdit ? (
+        <span className='EditIcon'>
+          <EditIcon fontSize="small" style={{ marginLeft: '-70%' }} />
           <span>Edit</span>
         </span>
+      ) : null}
+
+      {hideShowEdit ? (
+        <span className='EditIcon'>
+           <EditIcon fontSize ="small" style={{marginLeft:"-14rem"}}/>
+          <span>Edit</span>
+        </span>
+      ) : null}
       </div>
       <div>
-      <img src={Wifi} alt='' width="28px" style={{display:"flex", marginLeft:"8%", position:"absolute", marginTop:"4.8%"}}/>
+      <img src={Wifi} alt='' width="28px" className='Wifi' />
         <input type='text' placeholder='2412     - 7512     - 3412     - 3456'className='Card_box'/>
         <VerifiedIcon fontSize ="small" style={{color:"blue",opacity:"0.4",marginLeft:"-5%",marginTop:"4%"}} />
       </div>
@@ -77,7 +110,7 @@ const PaymentGateway = () => {
         </span>
       </div>
       <div>
-        <img src={Payment} alt='' width="20%" height="70%" style={{position:"absolute", display:"flex", marginLeft:"72%",marginTop:"-45%"}}/>
+        <img src={Payment} alt=''  className='Payment' />
       </div>
       <div>
         <button className='Click_btn'>Pay Now</button>

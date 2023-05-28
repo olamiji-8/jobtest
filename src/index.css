@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   width: 10%;
+  overflow: hidden;
   
 }
 h2{
